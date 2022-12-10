@@ -28,3 +28,16 @@ double by = InputInt();
 
 double ab = Math.Sqrt((bx - ax) * (bx - ax) + (by - ay) * (by - ay));
 Console.WriteLine(ab);
+
+
+//прописали методом
+double GetDistanceBetweenTwoPoints(double ax, double ay, double bx, double by)
+{
+double ab = Math.Sqrt((bx - ax) * (bx - ax) + (by - ay) * (by - ay));
+return ab;
+}
+//прописали методом Более красиво
+double GetDistanceBetweenTwoPoints1(int x1, int x2, int y1, int y2)
+{
+return Math.Round(Math.Sqrt(Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2)), 2);
+}
