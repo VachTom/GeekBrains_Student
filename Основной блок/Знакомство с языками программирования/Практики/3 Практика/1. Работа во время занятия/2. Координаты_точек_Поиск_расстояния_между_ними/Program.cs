@@ -6,7 +6,7 @@ A (3,6); B (2,1) -> 5,09 A (7,-5); B (1,-1) -> 7,21
 */
 
 
-using static Console;	// Позволяет не не прописывать команду (для лентяев)))
+//using static Console;	// Позволяет не не прописывать команду (для лентяев)))
 
 double InputInt()
 {
@@ -29,7 +29,7 @@ double by = InputInt();
 double ab = Math.Sqrt((bx - ax) * (bx - ax) + (by - ay) * (by - ay));
 Console.WriteLine(ab);
 
-
+/*
 //прописали методом
 double GetDistanceBetweenTwoPoints(double ax, double ay, double bx, double by)
 {
@@ -41,3 +41,4 @@ double GetDistanceBetweenTwoPoints1(int x1, int x2, int y1, int y2)
 {
 return Math.Round(Math.Sqrt(Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2)), 2);
 }
+*/

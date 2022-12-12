@@ -26,7 +26,7 @@ int[] GetTableOfSqures(int num)
     int[] arr = new int[num];
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i] = (int)(Math.Pow(i + 1, 2));
+        arr[i] = (int)(Math.Pow(i + 1, 3));
     }
     return arr;
 }

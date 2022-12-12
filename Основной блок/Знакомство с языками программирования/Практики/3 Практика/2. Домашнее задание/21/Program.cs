@@ -29,15 +29,15 @@ int InputInt()
 }
 
 double x1 = InputInt();
-double x2 = InputInt();
 double y1 = InputInt();
-double y2 = InputInt();
 double z1 = InputInt();
+double x2 = InputInt();
+double y2 = InputInt();
 double z2 = InputInt();
 
 //прописали методом Более красиво
 double GetDistanceBetweenTwoPoints1(double x1, double x2, double y1, double y2, double z1, double z2)
-{                                           3                       7                       11  
+{                           
     return Math.Round(Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2) + Math.Pow(z2 - z1, 2)), 2);
 }
 double result = GetDistanceBetweenTwoPoints1(x1, x2, y1, y2, z1, z2);

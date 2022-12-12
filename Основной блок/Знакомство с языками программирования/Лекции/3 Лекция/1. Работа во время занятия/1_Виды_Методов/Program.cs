@@ -10,7 +10,7 @@ void Methood1()
 {
     Console.WriteLine("Автор Товмасян Вачик Каренович");
 }
-//Methood1();
+Methood1();
 
 
 
@@ -20,7 +20,7 @@ void Methood2(string ads)
 {
     Console.WriteLine(ads);
 }
-//Methood2("Текст сообщения ");
+Methood2("Текст сообщения ");
 
 //Именнованные аргументы, явно указывают к какому аргументу какое значение мы хотим указать. Далее разбор этого
 //Это бывает нужно в том случае когда методы примают некоторое кол-во отличающих аргументов.
@@ -33,7 +33,7 @@ void Methood2_1(string ads, int count)
         i++;
     }
 }
-//Methood2_1(ads: "Текст", count: 4);
+Methood2_1(ads: "Текст", count: 4);
 //Methood2_1(count: 4, ads: "YjdsТекст");
 
 
@@ -46,14 +46,14 @@ int Methood3()
 int year = Methood3();
 Console.WriteLine(year);
 
-
+/*
 //4 вид методов: Что-то принимают, что-то возвращают"    */
-string Methood4(int count, char d);
+string Methood4(int counts, string d)
 {
     int i = 0;
     string result = string.Empty;
 
-    while (i < count)
+    while (i < counts)
     {
         result = result + d;
         i++;
@@ -61,4 +61,4 @@ string Methood4(int count, char d);
     return result;
 }
 string rew = Methood4(10, "asdf");
-Console.WriteLine(res);
+Console.WriteLine(rew);
