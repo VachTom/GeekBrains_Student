@@ -13,6 +13,7 @@ if (!isParsed || n < 1)
 
 int sum = GetSumOfNumbersInInterval(n);
 Console.WriteLine(sum);
+
 int GetSumOfNumbersInInterval(int n)
 {
     int sum = 0;
