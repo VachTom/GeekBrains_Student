@@ -1,13 +1,8 @@
-﻿/*
-Задача 29: Напишите программу, которая задаёт массив 
-из 8 элементов и выводит их на экран.
+﻿/*Задача 29: Напишите программу, которая задаёт массив 
+  из 8 элементов и выводит их на экран.
 
 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 6, 1, 33 -> [6, 1, 33] */
-
-
-
-
 
 /*Задача 30: 
 Напишите программу, которая выводит массив из 8 элементов, 
@@ -25,20 +20,7 @@ if (!isParsed)
 }
 else
 {
-    int userLength = num;
-
-    int[] userArray = ArrayFilling(userLength);
-    PrintArr(userArray);
-
-    int[] ArrayFilling(int userLength)
-    {
-        int[] arr = new int[userLength];
-        for (int i = 0; i < arr.Length; i++)
-        {
-            arr[i] = rnd.Next(0, 2); // промежуток от 0 до двух
-        }
-        return arr;
-    }
+ 
 
     void PrintArr(int[] array)
     {
@@ -48,7 +30,7 @@ else
         }
     }
 }
-
+/*
 void TestPositiveGetSumOfNumbersInterval()
 {
     int[] numbers = new int[] { 1, 2, 3, 4 };
@@ -67,4 +49,4 @@ void TestPositiveGetSumOfNumbersInterval()
             Console.WriteLine("okay");
         }
     }
-}
+}*/
