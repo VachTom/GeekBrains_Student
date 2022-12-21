@@ -6,7 +6,7 @@
 3, 5 => 243
 2, 4 => 16                                                                       */
 
-Console.WriteLine($"Введите Первое число => ");
+Console.Write($"Введите Первое число => ");
 bool isParsed1 = int.TryParse(Console.ReadLine(), out int a);
 if (!isParsed1)
 {
@@ -18,7 +18,7 @@ else
 }
 
 
-Console.WriteLine($"Введите Второе число => ");
+Console.Write($"Введите Второе число => ");
 bool isParsed2 = int.TryParse(Console.ReadLine(), out int b);
 if (!isParsed2)
 {
@@ -31,6 +31,6 @@ else
     {
         j = j* a;
     }
-    
-        Console.WriteLine(j);
+        Console.WriteLine();
+        Console.WriteLine($"Число {a} в степени {b} = {j}");
 }

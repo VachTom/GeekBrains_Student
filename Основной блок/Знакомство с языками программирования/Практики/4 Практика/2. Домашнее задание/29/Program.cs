@@ -1,52 +1,23 @@
 ﻿/*Задача 29: Напишите программу, которая задаёт массив 
   из 8 элементов и выводит их на экран.
-
 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
-6, 1, 33 -> [6, 1, 33] */
+6, 1, 33 -> [6, 1, 33] 
+ */
 
-/*Задача 30: 
-Напишите программу, которая выводит массив из 8 элементов, 
-заполненный нулями и единицами в случайном порядке.
-[1,0,1,1,0,1,0,0]  */
-
-Random rnd = new Random();
-
-
-bool isParsed = int.TryParse(Console.ReadLine(), out int num);
-if (!isParsed)
+int[] Array1()
 {
-    Console.WriteLine("Вы ввели некоректную информацию.");
-    return;
-}
-else
-{
- 
+    Console.WriteLine("Введите количество элементов массива: ");
 
-    void PrintArr(int[] array)
+    int num = int.Parse(Console.ReadLine());
+
+    int[] array = new int[num];
+    for (int i = 0; i < array.Length; i++)
     {
-        for (int i = 0; i < array.Length; i++)
-        {
-            Console.Write($"{array[i]} ");
-        }
+        Console.WriteLine($"\nВведите элемент с индексом {i}:");
+        array[i] = int.Parse(Console.ReadLine());
     }
+Console.WriteLine("Выводимый массив:  [{0}]", string.Join(", ", array));
+return array;
 }
-/*
-void TestPositiveGetSumOfNumbersInterval()
-{
-    int[] numbers = new int[] { 1, 2, 3, 4 };
 
-    int[] expected = new int[] { 1, 3, 6, 10 }; // expected - это то что мы ожидаем получить от метода
-
-    for (int i = 0; i < numbers.Length; i++)
-    {
-        int actiol  = TestPositiveGetSumOfNumbersInterval(numbers[1]); //actiol 
-        if (actiol != expected[i])
-        {
-            Console.WriteLine($"Ожидали получить {expected[i]} а получили {actiol}");
-        }
-        else
-        {
-            Console.WriteLine("okay");
-        }
-    }
-}*/
+int[] result = Array1();
