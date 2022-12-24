@@ -38,6 +38,9 @@ else
     }
 }
 
+
+/*есть какая та ошибка 
+
 void TestPositiveGetSumOfNumbersInterval()
 {
     int[] numbers = new int[] { 1, 2, 3, 4 };
@@ -56,4 +59,4 @@ void TestPositiveGetSumOfNumbersInterval()
             Console.WriteLine("okay");
         }
     }
-}
+}*/
