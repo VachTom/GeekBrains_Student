@@ -3,9 +3,7 @@
 4->24 
 5->120*/
 
-
 Console.WriteLine($"Введите число => ");
-
     bool isParsed = double.TryParse(Console.ReadLine(), out double n);
     if (!isParsed)
     {
@@ -19,7 +17,6 @@ Console.WriteLine($"Введите число => ");
 
 Console.WriteLine($"Факториал числа {n} равен {Factorial(n)}");
 
-
 double Factorial(double n)
 {
     if (n == 0 || n == 1)
@@ -28,8 +25,6 @@ double Factorial(double n)
     }
     return n*(Factorial(n - 1));
 }
-
-
 
 void test()
 {

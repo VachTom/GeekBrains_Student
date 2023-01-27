@@ -10,7 +10,6 @@ if (!isParsed || n < 1)
     Console.WriteLine("incorect number");
     return;
 }
-
 int sum = GetSumOfNumbersInInterval(n);
 Console.WriteLine(sum);
 

@@ -14,8 +14,6 @@ PrintArray();
 
 Console.WriteLine($"Сумма положительных чисел = {sumPositiveNumbers}, Сумма отрицательных чисел = {sumNegativeNumbers}");
 
-
-
 // Методы сумм отриц и полож элементов массива
 int GetSumPositiveNumbersInArray(int [] array)
 {
@@ -29,7 +27,6 @@ int GetSumPositiveNumbersInArray(int [] array)
     }
     return sumPositiiveNumbers;
 }
-
 int GetSumNegativeNumbersInArray(int [] array)
 {
     int sumNegativeNumbers = 0;
@@ -42,7 +39,6 @@ int GetSumNegativeNumbersInArray(int [] array)
     }
     return sumNegativeNumbers ;
 }
-
 
 // Метод создания массива
 int[] GenerateArray(int min, int max, int length) // Метод который генерирует массив
@@ -68,3 +64,4 @@ void PrintArray()
     string message = string.Join(", ", array);
     Console.WriteLine($"[{message}]");
 }
+
