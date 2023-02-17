@@ -3,9 +3,9 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>_29_</RootNamespace>
+    <RootNamespace>_6</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>deable</Nullable>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
 </Project>

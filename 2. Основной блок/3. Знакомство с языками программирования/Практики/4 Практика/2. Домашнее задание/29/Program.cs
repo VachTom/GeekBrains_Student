@@ -6,7 +6,7 @@
 
 int[] Array1()
 {
-    Console.WriteLine("Введите количество элементов массива: ");
+    Console.Write("Введите количество элементов массива: ");
 
     int num = int.Parse(Console.ReadLine());
 
