@@ -19,7 +19,7 @@ int[,] MultyArray = new int[n, k];
 int[,] InitArray = GenerateArray(MultyArray);
 PrintArray(InitArray);
 int[,] ResultArr = ChangeArray(InitArray);
-PrintArray(InitArray);
+
 
 
 int[,] GenerateArray(int[,] array)

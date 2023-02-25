@@ -28,18 +28,38 @@ int[,] pic = new int[,]
 {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
 };
 
-int[,] PrintImage(int[,] image)
+
+void PrintImage(int[,] image)
 {
-    for (int i = 0; i < image.GetLength; i++)
+    for (int i = 0; i < image.GetLength(0); i++)
     {
-        for (int j = 0; j < image.GetLength; j++)
+        for (int j = 0; j < image.GetLength(1); j++)
         {
-            if (image[i, j] == 0) Console.WriteLine($" ");
-            else Console.WriteLine($"+");
+            if (image[i, j] == 0) Console.Write(" ");
+            else Console.Write("+");
         }
         Console.WriteLine();
     }
 }
 
+void FullImage(int rows, int col)
+{
+    if (pic[rows, col] == 0)
+    {
+        pic[rows, col] = 1;
+        FullImage(rows-1, col);
+        FullImage(rows, col-1);
+        FullImage(rows+1, col);
+        FullImage(rows, col+1);
+    }
 
-PrintImage(image);
+}
+
+
+
+PrintImage(pic);
+
+
+FullImage(13,15);
+
+PrintImage(pic);

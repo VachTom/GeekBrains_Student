@@ -2,7 +2,7 @@
 int RedInt()
 {
     Console.Write("Введите число: ");
-    return int.Parse(Console.ReadLine());
+    return int.Parse(Console.ReadLine()!);
 }
 
 int decimalNum = RedInt();
