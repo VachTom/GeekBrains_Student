@@ -561,6 +561,11 @@ for (int i = 0; i < 40; i++)
 
 
 //                                  RANDOM
+// array[i] = new random().Next(range); Запись в одну строку, присваивание что то к рандому.
+
+//   Random random = new Random()
+//   array[i] = random.Next(range); Запись в две строку, присваивание что то к рандому.
+
 //int NumberA = new Random().Next(1, 25); //(Случайное число в массиве от 1 до 25)  => Console.WriteLine (NumberA);
 
 /*2Л.1.0. Напишите программу, которая выдает случайное число из отрезка [10, 99] и показывает наибольшую цифру числа. Пример: 78 - 8, 50 - 5, 13 - 3 
@@ -670,6 +675,7 @@ void TestPositiveGetSumOfNumbersInterval() //есть какая та ошибк
         }
     }
 }*/
+
 
 
 

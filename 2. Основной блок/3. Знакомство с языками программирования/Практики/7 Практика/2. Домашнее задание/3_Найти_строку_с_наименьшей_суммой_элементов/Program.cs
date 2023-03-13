@@ -3,41 +3,71 @@
 2. Написать программу, упорядочивания по убыванию элементы каждой строки двумерной массива.
 3. В прямоугольной матрице найти строку с наименьшей суммой элементов.*/
 
-Console.Write("Введите размер строки: ");
-bool IsParsed1 = int.TryParse(Console.ReadLine(), out int m);
-if (!IsParsed1) Console.WriteLine("Пожалуйста, введите натуральное число");
-Console.Write("Введите размер столбца: ");
-bool IsParsed2 = int.TryParse(Console.ReadLine(), out int n);
-if (!IsParsed2) Console.WriteLine("Пожалуйстa, введите натуральное число");
+Console.Clear();
+int m = ReadInt("Введите значение строки: ");
+int n = ReadInt("Введите значение столбца: ");
+int range = ReadInt("Введите диапазон данных массива от 1 до ");
 
-if (m != n)
-{
-    int[,] MultyArray = new int[m, n];
-    int[,] InitArray = GenerateArray(MultyArray);
-    PrintArray(InitArray);
-}
-else Console.WriteLine("Матрица должна быть прямоуголной формы, просьба исправить размер Строки/Столбца");
+int[,] arrays = new int[m, n];
+int[,] InitArray = GeneratArray(arrays);
+PrintArray(InitArray);
+int[,] ResultArray = SumArr(arrays);
 
-
-int[,] GenerateArray(int[,] array)
+int[,] GeneratArray(int[,] array)
 {
     Random random = new Random();
     for (int i = 0; i < array.GetLength(0); i++)
     {
-        for (int j = 0; j < array.GetLength(1); j++) { array[i, j] = random.Next(1, 10); }
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            array[i, j] = random.Next(range);
+        }
     }
     return array;
 }
 
-void PrintArray(int[,] arr)
+void PrintArray(int[,] array)
 {
-    Console.WriteLine();
-    for (int i = 0; i < arr.GetLength(0); i++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-        Console.Write("[ ");
-        for (int j = 0; j < arr.GetLength(1); j++) { Console.Write($"{arr[i, j]} "); }
-        Console.Write("]");
         Console.WriteLine();
+        Console.Write("[ ");
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write($"{array[i, j]} ");
+        }
+        Console.Write("]");
     }
 }
 
+int ReadInt(string input)
+{
+    Console.Write(input);
+    bool IsParsed = int.TryParse(Console.ReadLine(), out int output);
+    if (!IsParsed) Console.Write("Пожалуйста, введите натуральное число.");
+    return output;
+}
+
+int[,] SumArr(int[,] array)
+{
+    Console.WriteLine();
+
+    int sumMin = -1;
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        int sum = 0;
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            sum += array[i, j];
+            if (sum < sumMin)
+            {
+                sumMin = sum;
+            }
+        }
+        Console.WriteLine($"Сумма {i + 1} строки = {sum}");
+        
+    }
+
+    Console.WriteLine($"Сумма наименьшей строки = {sumMin}");
+    return array;
+}
