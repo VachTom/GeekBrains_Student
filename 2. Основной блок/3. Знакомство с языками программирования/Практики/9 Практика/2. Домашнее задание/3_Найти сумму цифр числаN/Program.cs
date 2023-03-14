@@ -6,35 +6,14 @@
 5. Написать программу возведения числа А в целую стень B
 6. Написать программу показывающие первые N чисел, для которых каждое следующее равно сумме двух предыдущих. Первые два элемента последовательности задаются пользователем */
 
-//пока не понятно
-
-
 int m = ReadInt("Введите число: ");
-
-int[] array = new int[1];
-int[] InitArr = GeneratArr(array);
-PrintArr(InitArr);
-int[] ResultArr = SumElementArr(array);
-
-int[] GeneratArr(int[] array)
+int SumNimber(int m)
 {
-    Random random = new Random();
-    for (int i = 0; i < array.Length; i++)
-    {
-        array[i] = random.Next(m, n);
-    }
-    return array;
-}
+    if (m == 0) return 0;
+    return SumNimber(m / 10) + m % 10;
 
-void PrintArr(int[] array)
-{
-    Console.Write("[ ");
-    for (int i = 0; i < array.Length; i++)
-    {
-        Console.Write($"{array[i]} ");
-    }
-    Console.Write("]");
 }
+Console.WriteLine(SumNimber(m));
 
 int ReadInt(string input)
 {
@@ -44,10 +23,4 @@ int ReadInt(string input)
     return output;
 }
 
-int[] SumElementArr(int[] array)
 
-
-
-
-// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");

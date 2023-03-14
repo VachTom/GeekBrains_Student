@@ -6,18 +6,12 @@
 5. Написать программу возведения числа А в целую стень B
 6. Написать программу показывающие первые N чисел, для которых каждое следующее равно сумме двух предыдущих. Первые два элемента последовательности задаются пользователем */
 
-
-int AkkermanFunc(int m, int n)
+// f(n) = f(n-1) + f(n-2)
+int Fibanachi(int n)
 {
-    if (m == 0)
-    {
-        return n + 1;
-    }
-    if (m > 0 && n == 0)
-    {
-        return AkkermanFunc(m - 1, 1);
-    }
-    return AkkermanFunc(m - 1, AkkermanFunc(m, n - 1));
+    if (n == 0 || n == 1) return n;
+    return Fibanachi(n - 1) + Fibanachi(n - 2);
 }
+int f = Fibanachi(6);
 
-Console.WriteLine(AkkermanFunc(3, 2));
+Console.WriteLine(f);

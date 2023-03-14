@@ -20,7 +20,7 @@ int[] GeneratArr(int[] array)
     Random random = new Random();
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = random.Next(n);
+        array[i] = random.Next(m, n);
     }
     return array;
 }

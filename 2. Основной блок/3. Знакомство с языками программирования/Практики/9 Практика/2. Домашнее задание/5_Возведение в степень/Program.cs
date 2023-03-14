@@ -12,7 +12,7 @@ int a = ReadInt("Введите число A: ");
 int b = ReadInt("Введите число B: ");
 
 double result = Math.Pow(a, b);
-Console.WriteLine($"Число {a} в степени {b} = {result}");
+Console.WriteLine($"Число {a} в {b} степени = {result}");
 
 
 int ReadInt(string input)
