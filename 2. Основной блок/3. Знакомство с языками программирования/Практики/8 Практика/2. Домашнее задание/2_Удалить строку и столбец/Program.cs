@@ -69,7 +69,7 @@ int[,] DeleteCross(int[,] array, int row, int col)
     }
     return result;
 }
-
+/*
 int[,] FindMinElements(int[,] array)
 {
     int temp = array[0, 0];
@@ -86,3 +86,4 @@ int[,] FindMinElements(int[,] array)
     }
     return array;
 }
+*/
