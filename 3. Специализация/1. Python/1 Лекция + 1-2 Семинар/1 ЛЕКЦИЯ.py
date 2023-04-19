@@ -1,3 +1,7 @@
+# https://gbcdn.mrgcdn.ru/uploads/asset/3681957/attachment/2a0236333afe4d0de6614dd39978f004.pdf
+# https://gbcdn.mrgcdn.ru/uploads/asset/4930829/attachment/705a75044faee00f575ad5ae6d0c1f80.pdf
+
+
 # Формат цифры после точки сколько знаков показываешь 
 a = 5.45687
 b = 8.4566445687
@@ -18,3 +22,11 @@ r = range(100, 0, -20) # range(100, 0, -20)
 
 for i in r:
     print(i) # 100 80 60 40 20
+
+
+    
+
+spisok = [1, 5, 6, 15, 65, 99, 150]
+spisok2 = spisok[:3] + spisok[5:]
+print(spisok2)
+print(spisok[5:2:-1]) # обратный эффект
