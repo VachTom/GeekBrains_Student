@@ -19,8 +19,19 @@ count = 0
 
 countNumber = int(input(
     "Введите число по которому будет обрабатываться поиск повторяющих значений: "))
-for j in range(len(arr)):
-    if arr[j] == countNumber:
-        count += 1
+# for j in range(len(arr)):
+#     if arr[j] == countNumber:
+#         count += 1
+# print(f"Повторы: {count}")
 
-print(f"Повторы: {count}")
+
+# Можно сделать цикл for иначе:
+for i in arr: # 
+    if i == countNumber:
+        count+=1
+print(count)
+
+
+print(arr.count(countNumber)) # Вместо последнего цикла for
+
+

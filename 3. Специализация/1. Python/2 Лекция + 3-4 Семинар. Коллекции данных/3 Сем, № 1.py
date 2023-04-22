@@ -1,14 +1,14 @@
-# slovar = {"1": "Вачик", "2": "Нанэ"}
-#print(slovar)
+slovar = {"1": "Вачик", "2": "Нанэ"}
+# print(slovar)
 
-# slovar["3"] = "Любовь Вечно"  
-#print(slovar)
+slovar["3"] = "Любовь Вечно"  
+# print(slovar)
 
 # for i in slovar:
 #    print(i, slovar[i]) # 1 - ключи, 2 значение ключа. Поиск всегда происходит через ключ. Нельзя найти ключ по значению, только значение по ключу
 
-# for (key, value) in slovar.items():
-#     print(key, value)
+for (key, value) in slovar.items():
+    print(key, value)
     
 # for (key, value) in slovar.items():
 #     if key == 1:
@@ -50,9 +50,9 @@ print(len(set(list_1))) # еще решение в одну строку
 # 3
 # 7 8 9 1 2 3 4 5 6
 
-arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-k = 5
-arr2 = arr[-k:] + arr[:-k] 
+# arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# k = 5
+# arr2 = arr[-k:] + arr[:-k] 
 
-print(arr)
-print(arr2)
+# print(arr)
+# print(arr2)
