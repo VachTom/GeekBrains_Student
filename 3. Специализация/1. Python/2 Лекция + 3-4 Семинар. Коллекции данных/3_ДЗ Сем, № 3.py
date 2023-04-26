@@ -34,6 +34,6 @@ slovarik = {"A": 1, "E": 1, "I": 1, "O": 1, "U": 1, "L": 1, "N": 1, "S": 1, "T":
 your_word = input("Введите ваше слово: ").upper()
 count = 0
 
-for i in your_word:
+for i in your_word: # i это буквы введенного слова 
     count += slovarik[i]
 print(f"Стоимость введенного пользователем слова равна: {count}")
