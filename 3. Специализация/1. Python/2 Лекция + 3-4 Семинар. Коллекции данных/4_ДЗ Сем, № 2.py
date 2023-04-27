@@ -7,3 +7,31 @@
 Собирающий модуль за один заход, находясь непосредственно перед некоторым кустом, собирает ягоды с этого куста и с двух соседних с ним.
 Напишите программу для нахождения максимального числа ягод, которое может собрать за один заход собирающий модуль,
  находясь перед некоторым кустом заданной во входном файле грядки. """
+
+import random
+
+n = int(input("Введите кол-во элементов: "))
+arr = list()
+arrIndex = list()
+
+for i in range(n):
+    arrIndex.append(i+1)
+print(f"Индекс {arrIndex}")
+
+for k in range(n):
+    temp = random.randint(0, n)
+    arr.append(temp)
+print(f"Массив {arr}")
+
+arrCount = list()
+max = 0
+for j in range(n - 1):
+    temp = arr[j] + arr[j + 1] + arr[j - 1]
+    if max < temp:
+        max = temp
+        tempIndex = j
+    # arrCount.append(arr[j] + arr[j + 1] + arr[j - 1])
+    # print(f"{j + 1} Итерация = {arrCount}")
+
+print()
+print(f"{tempIndex+1} Итерация, Максимальное значение: {max}")
