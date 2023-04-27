@@ -35,22 +35,21 @@ int ReadInt(string message)
     return int.Parse(Console.ReadLine()!);
 }
 
-
+/* // сумма всех элементов
 int SumMatrikDiog(int[,] array)
 {
     int sum = 0;
     for (int i = 0; i < array.GetLength(0); i++)
     {
-
         for (int j = 0; j < array.GetLength(1); j++)
         {
             sum += array[i, j];
         }
     }
     return sum;
-}
+}*/
 
-/* Решение с двумя циклами. Это не целесообразно, т.к. затрачиваете в два раза больше ресурсов. Но имеет место быть
+// Решение с двумя циклами. Это не целесообразно, т.к. затрачиваете в два раза больше ресурсов. Но имеет место быть
     int SumMatrikDiog(int[,] array)
     {
         int sum = 0;
@@ -67,7 +66,7 @@ int SumMatrikDiog(int[,] array)
         return sum;
     }
 
-*/
+
 
 int value = ReadInt("Введите размер матрицы: ");
 int[,] InitArr = GeneratArray(value);
