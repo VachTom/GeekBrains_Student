@@ -18,3 +18,17 @@ def degree(a, b, c):
     return degree(a, b, c)
 
 print(degree(a, b, c))
+
+
+
+
+# Еще вариант 
+def my_power(a,b):
+    if b ==0:
+        return 1
+    else:
+        return a* my_power(a,b-1)
+
+a= int(input())
+b= int(input())
+print(my_power(a,b))
