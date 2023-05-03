@@ -21,13 +21,13 @@ Summ(a, b)
 
 
 # Дополнительно 
-n = int(input("Введите число Факториала: "))
+n = int(input("Введите число Фибаначи: "))
 
-def Factorial(n):
+def Fib(n):
     if n in [1, 2]: return 1
-    return Factorial(n-1) + Factorial(n-2)
+    return Fib(n-1) + Fib(n-2)
 
-list1 = [Factorial(i) for i in range(1, 10)]
+list1 = [Fib(i) for i in range(1, 10)]
 
 
 print(list1)

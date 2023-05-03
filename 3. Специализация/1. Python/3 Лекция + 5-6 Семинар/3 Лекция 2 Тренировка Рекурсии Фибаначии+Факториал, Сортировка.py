@@ -1,4 +1,6 @@
-# 1                                 Рекурсия. Числа Фибаначи
+
+# n = int(input("Введите целое число: "))
+""" # 1                                 Рекурсия. Числа Фибаначи
 # def fib(n):
 #     if n in [1, 2]: return 1
 #     else: return fib(n-1) + fib(n-2)
@@ -70,24 +72,76 @@
 # print(sortik([4, 49, 44, 16, 25, 25, 19]))
 
 
+
+n = int(input("Введите целое число Фибаначи: "))
+def Fib(n):
+    if n in [1, 2]: return 1
+    return Fib(n-1) + Fib(n-2)
+fib1 = [Fib(i) for i in range(1, n + 5)]
+print(fib1) 
+
+
+
+
+
+
+n = int(input("Введите целое число Фибаначи: "))
+def Factor(n):
+    if n <= 1: return 1
+    else: n * Factor(n - 1)
+ls = [Factor(i) for i in range(1, 10)]
+Factor(ls)
+
+
+def Fibanachi(n):
+    if n in [1, 2]: return 1 
+    else: return Fibanachi(n-1) + Fibanachi(n-2)
+arr = [Fibanachi(i) for i in range(1, n+5)]
+print(arr) 
+
+# Факториал числа
+
+def Factorial(n):
+    if n <=1: return 1 
+    return n * Factorial(n-1)
+arr = [Factorial(i) for i in range(0,n +5)]
+print(arr)
+
+
+
+n = int(input("Введите число Фиб: "))
+def Fib(n):
+    if n in [1, 2]: return 1
+    return Fib(n-1) + Fib(n-2)
+list1 = [Fib(i) for i in range(1, n+5)]
+print(list1)  
+
+
+"""
+
 import random
 
 n = int(input("Введите размер массива: "))
-array1 = list()
-for i in range(0,n):
-    array1.append(random.randint(1,50))
+# array1 = list()
+# for i in range(0,n):
+#     array1.append(random.randint(1,50))
+array2 = [random.randint(1,50) for i in range(0, n)] # Замена того что выше одной строкой 
 
-
-
-def sort(array):
-    if len(array) == 1: return 1
+def sort(array2):
+    if len(array2) == 1: return 1
     else:
         count = [0]
-        left = [i for i in array[1:] if i <= count]
-        rigth = [i for i in array[:1] if i > count]    
+        left = [i for i in array2[1:] if i <= count]
+        rigth = [i for i in array2[:1] if i > count]    
     return sort(left) + [count] + sort(rigth)
-    
 
 
-print(array1)
-print(sort([array]))
+arr = array2
+print(array2)
+sort(arr)
+
+# print(sort([array1]))
+# print(array1)
+
+
+
