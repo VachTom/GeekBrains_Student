@@ -1,6 +1,6 @@
-
 # n = int(input("Введите целое число: "))
-""" # 1                                 Рекурсия. Числа Фибаначи
+#                                           Рекурсия. Числа Фибаначи
+"""                                                 # 1 
 # def fib(n):
 #     if n in [1, 2]: return 1
 #     else: return fib(n-1) + fib(n-2)
@@ -8,38 +8,63 @@
 # for i in range(1, 10):
 #     list1.append(fib(i))
 # print(list1)
-
-
-# 2
+                                                    # 2
 # С помощью генератора списка Фиббаначи
 # def fib(n):
 #     if n in [1, 2]: return 1 
 #     else: return fib(n-1) + fib(n-2)
 # list1 = [fib(i) for i in range(1, 10)]
 # print(list1)
-
-
-# 3
+                                                    # 3
 # def fib(n):
 #     if n <=2: return 1
 #     else: return fib(n-1) + fib(n-2)
 # printFib = [fib(i) for i in range(1,10)]
 # print(printFib)
-
-
-# 4
-# n = int(input("Введите число Факториала: "))
+                                                    # 4
+# n = int(input("Введите число Фиббаначи: "))
 # def fib(n):
 #     if n in [1, 2]: return 1
 #     else: 
 #         return fib(n-1) + fib(n-2)
 # list1 = [fib(i) for i in range(1,10)]
 # print(list1)
+                                                    # 5
+n = int(input("Введите целое число Фибаначи: "))
+def Fib(n):
+    if n in [1, 2]: return 1
+    return Fib(n-1) + Fib(n-2)
+fib1 = [Fib(i) for i in range(1, n + 5)]
+print(fib1)
+                                                    # 6
+n = int(input("Введите целое число Фибаначи: "))
+def Factor(n):
+    if n <= 1: return 1
+    else: n * Factor(n - 1)
+ls = [Factor(i) for i in range(1, 10)]
+Factor(ls)
+                                                    # 7
+def Fibanachi(n):
+    if n in [1, 2]: return 1 
+    else: return Fibanachi(n-1) + Fibanachi(n-2)
+arr = [Fibanachi(i) for i in range(1, n+5)]
+print(arr) 
+                                                    # 8
+n = int(input("Введите число Фиб: "))
+def Fib(n):
+    if n in [1, 2]: return 1
+    return Fib(n-1) + Fib(n-2)
+list1 = [Fib(i) for i in range(1, n+5)]
+print(list1)  
+                                                    # 9
+n = int(input("Введите размер массива: "))
+def Fib(n):
+    if n in [1, 2]: return 1
+    return Fib(n-1) + Fib(n-2)
+ar = [Fib(i) for i in range(1, n+5)]
+print(ar)
 
-
-
-
-#                              Быстрая сортировка
+#                                               1. Быстрая сортировка
 # def quick_sort(array):
 #     if len(array) <= 1:
 #         return array
@@ -48,21 +73,18 @@
 #     less = [i for i in array[1:] if i <= pivot]
 #     greater = [i for i in array[1:] if i > pivot]
 #     return quick_sort(less) + [pivot] + quick_sort(greater)
-
 # print(quick_sort([14, 15, 10, 55, 22, 19, 7, 5, 9]))
 
-
+#                                               2. 
 # def sort(array):
 #     if len(array) <= 1: return array
-
 #     point = array[0]
 #     less = [i for i in array[1:] if i <= point]
 #     greater = [i for i in array[1:] if i > point]
 #     return sort(less) + [point] + sort(greater) 
-
 # print(sort([2, 25, 4, 45, 7, 5]))
 
-
+#                                               3. 
 # def sortik(array):
 #     if len(array) <= 1: return array
 #     pointik = array[0]
@@ -72,53 +94,7 @@
 # print(sortik([4, 49, 44, 16, 25, 25, 19]))
 
 
-
-n = int(input("Введите целое число Фибаначи: "))
-def Fib(n):
-    if n in [1, 2]: return 1
-    return Fib(n-1) + Fib(n-2)
-fib1 = [Fib(i) for i in range(1, n + 5)]
-print(fib1) 
-
-
-
-
-
-
-n = int(input("Введите целое число Фибаначи: "))
-def Factor(n):
-    if n <= 1: return 1
-    else: n * Factor(n - 1)
-ls = [Factor(i) for i in range(1, 10)]
-Factor(ls)
-
-
-def Fibanachi(n):
-    if n in [1, 2]: return 1 
-    else: return Fibanachi(n-1) + Fibanachi(n-2)
-arr = [Fibanachi(i) for i in range(1, n+5)]
-print(arr) 
-
-# Факториал числа
-
-def Factorial(n):
-    if n <=1: return 1 
-    return n * Factorial(n-1)
-arr = [Factorial(i) for i in range(0,n +5)]
-print(arr)
-
-
-
-n = int(input("Введите число Фиб: "))
-def Fib(n):
-    if n in [1, 2]: return 1
-    return Fib(n-1) + Fib(n-2)
-list1 = [Fib(i) for i in range(1, n+5)]
-print(list1)  
-
-
-"""
-
+#                                               4. 
 import random
 
 n = int(input("Введите размер массива: "))
@@ -140,8 +116,37 @@ arr = array2
 print(array2)
 sort(arr)
 
-# print(sort([array1]))
-# print(array1)
+
+
+
+
+
+
+
+#                                           Факториал числа
+#                                               1. 
+def Factorial(n):
+    if n <=1: return 1 
+    return n * Factorial(n-1)
+arr = [Factorial(i) for i in range(0,n + 1)]
+print(arr)
+#                                               2. 
+n = int(input("Введите число Факториала: "))
+def Factorial(n):
+    if n <=1: return 1
+    return n * Factorial(n-1)
+le = [Factorial(i) for i in range(0, n+1)]
+print(le)
+#                                               2. 
+n = int(input("Введите число Факториала: "))
+def Fact(n):
+    if n <=1: return 1
+    return Fact(n - 1) * n
+ar = [Fact(i) for i in range(0, n +1)]
+print(ar)
+
+
+"""
 
 
 

@@ -8,3 +8,17 @@
 
 1 2 1 4 3 5 6
 +1+1 = 2  """
+
+import random
+
+count = 0
+n = int(input("Введите размер массива: "))
+
+mas = [random.randint(1, 30) for i in range(0, n)]
+print(mas)
+
+for i in range(1, len(mas)-1):
+    if  mas[i-1] < mas[i] > mas[i+1]:
+        count+=1 
+
+print(f"Результат: {count}")
