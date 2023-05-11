@@ -25,7 +25,7 @@ n = int(input("Введите число Фибаначи: "))
 
 def Fib(n):
     if n in [1, 2]: return 1
-    return Fib(n-1) + Fib(n-2)
+   return Fib(n-1) + Fib(n-2)
 
 list1 = [Fib(i) for i in range(1, 10)]
 
