@@ -16,6 +16,8 @@ import random
 # print(f"Массив: {mas}")
 # print(f"Результат: {result}")
 
+
+
 # 2 Способ
 """ 
 def select(f, col):
@@ -29,8 +31,7 @@ print(res)
 res = where(lambda x: x % 2 == 0, res)
 print(res)
 res = list(select(lambda x:(x,x**2), res))
-print(res)
- """
+print(res) """
 
 
 
