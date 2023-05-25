@@ -1,6 +1,9 @@
-mas = [random.randint(0,100) for i in range(1, n)]
-# result = [(i,i**2) for i in mas if i % 2 == 0]
+1 вариант записи 
+# data2 = open("test.txt", 'r') # Чтение записи 
+# for i in data2:
+#     print(i)
 
 
-# print(f"Массив: {mas}")
-# print(f"Результат: {result}")
+# spis = ["123", "324"]
+# data2 = open("test.txt", 'w') # Чтение записи 
+# data.
