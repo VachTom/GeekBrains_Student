@@ -37,13 +37,17 @@ print(res) """
 
 
 # Фунция map + лямбда
-list_1 = [x for x in range(1, 21)]
-print(f"{list_1}")
+# list_1 = [x for x in range(1, 21)]
+# print(f"{list_1}")
 
-list_1 = list(map(lambda x: x + 10, list_1))
-print(f"{list_1}")
+# list_1 = list(map(lambda x: x + 10, list_1))
+# print(f"{list_1}")
 
+a = str("as da ds")
+print(a)
+res = a.replace("as", "gk")
 
+print(res)
 """ Файлы
 
 Варианты режима (мод):
