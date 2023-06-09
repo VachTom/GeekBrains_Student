@@ -1,2 +1,2 @@
-how_all
-        print(show_all(path))
+
+        search(path, stroka)

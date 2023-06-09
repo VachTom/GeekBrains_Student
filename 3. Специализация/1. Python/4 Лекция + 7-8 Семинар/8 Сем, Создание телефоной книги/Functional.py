@@ -56,15 +56,26 @@ def search(file_name, stroka):
 
 # 4 - Редактирование 
 def redaction(file_name, stroka):
-    b = search(file_name, stroka)
-    data = open(file_name, "r+")
-
-    # found = list(b.split(",")[0].split("\n"))
-    founds = b.replace(stroka, str(input("Редактируйте: ")))
-    data.write(founds)
+    data = open(file_name, "r")
+    list_name = list()
+    for line in data:
+        if i in line:
+            new_name = input("Редактируйте контакт: ")
+            list_name.append(new_name + "\n")
+            continue
+        list_name.append(line)
     data.close()
+    list_name = list(filter(lambda x: x !="", list_name))
+    data = open(file_name, "w")
+    for item in list_name:
+        data.write(item)
+    data.close
 
-    # return found 
+    # # found = list(b.split(",")[0].split("\n"))
+    # founds = b.replace(stroka, str(input("Редактируйте: ")))
+    # data.write(founds)
+    # data.close()
+
 
 # data = open(file_name, "r+")
     # for line in data:
