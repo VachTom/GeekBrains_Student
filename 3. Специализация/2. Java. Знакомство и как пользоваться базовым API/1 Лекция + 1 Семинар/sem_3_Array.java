@@ -8,7 +8,7 @@
 
 import java.util.Arrays;
 
-public class sem_3 {
+public class sem_3_Array {
  public static void main(String[] args) {
   int[] arr = new int[] { 3, 2, 4, 3, 3, 1, 5, 3, 3 };
 
