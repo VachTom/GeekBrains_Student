@@ -10,21 +10,28 @@
 Введите уравнение: ?? + ?? = 44
 Решение: 22 + 22 = 44 */
 
-// import java.util.Scanner;
+import java.util.Scanner;
 
-public class sem_dz_2 {
+public class sem_dz_1_Sum {
    public static void main(String[] args) {
-     for (int i = 2; i <= 1000; i++) {
-
-                for (int j = 2; j <= i; j++) {
-
-                    if (j < i  & i % j == 0) {
-                        break;
-                    }
-                    if (i % j == 0) {
-                        System.out.println(i + " - простое число");
-                    }
-                }
-            }
-      }
+      Scanner sc = new Scanner(System.in, "cp866");
+      System.out.print("Введите число: ");
+      Integer n = sc.nextInt();
+      System.out.print("Результат: ");
+      
+    System.out.println(Factorial(n));
    }
+
+   public static int Factorial(int n) {
+      if (n <= 1)
+         return 1;
+      else
+         return n + Factorial(n - 1);
+   }
+//    int[] ar = new int[n];for(
+//    int j = 0;j<args.length;j++)
+//    {
+
+//    }
+
+}
