@@ -13,16 +13,13 @@ public class sem_3 {
   System.out.println("Введите строку: ");
   String input = cs.nextLine();
 
- }
+  Integer couter = 0;
 
- public void AnaliticaStroki(String input) {
-
-  if (input.length() < 1) System.out.println("Ошибка! Прошу ввести значение.");
-  else{
+  if (input.length() < 1)
+   System.out.println("Ошибка! Прошу ввести значение.");
+  else {
    for (int i = 0; i < input.length(); i++) {
-    for (int j = 1; j < input.length(); j++) {
-     
-    }
+
    }
   }
 
