@@ -9,19 +9,19 @@ public class sem_4 {
 
  public static void main(String[] args) {
 
-  String text = "TEST";
-  try {
-   FileWriter writer = new FileWriter("file.txt", true);
-   for (int i = 0; i < 10; i++) {
-    writer.write(text + "\n");
+  // String text = "TEST";
+  // try {
+  //  FileWriter writer = new FileWriter("file.txt", true);
+  //  for (int i = 0; i < 10; i++) {
+  //   writer.write(text + "\n");
 
-   }
+  //  }
 
-   System.out.println("Получилось!");
-   writer.close();
-  } catch (Exception e) {
-   System.out.println("Что то пошло не так..");
-  }
+  //  System.out.println("Получилось!");
+  //  writer.close();
+  // } catch (Exception e) {
+  //  System.out.println("Что то пошло не так..");
+  // }
 
 
 File fl = new File("file.txt");
